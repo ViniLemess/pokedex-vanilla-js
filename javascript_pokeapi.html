@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex do Vini</title>
+    <link rel="icon" href="https://image.flaticon.com/icons/png/512/188/188918.png">
+      <link rel="stylesheet" href="./estilo_pokedex.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./js_pokedex.js"></script>
+</head>
+
+<body>
+    <main id="container">
+        <header id="cabecalho">
+            <a href="./pagina_inicial.html">Pagina Inicial<br><button onclick="" class="butaoBusca"><img
+                        src="https://image.flaticon.com/icons/png/512/188/188918.png" class="pokebola"></button></a>
+            <a href="./css_basico_box_model.html">CSS Box Model<br><button onclick="" class="butaoBusca"><img
+                        src="https://image.flaticon.com/icons/png/512/188/188918.png" class="pokebola"></button></a>
+            <a href="./css_flexbox.html">CSS Flexbox<br><button onclick="" class="butaoBusca"><img
+                        src="https://image.flaticon.com/icons/png/512/188/188918.png" class="pokebola"></button></a>
+            <a href="./css_grid.html">Css Grid<br><button onclick="" class="butaoBusca"><img
+                        src="https://image.flaticon.com/icons/png/512/188/188918.png" class="pokebola"></button></a>
+
+        </header>
+        <section id="pokedex">
+            <div id="buscaPokemon" class="bordaDouble">
+                <span>Pesquisa</span>
+                <input id="caixaBusca" class="bordaDouble" type="text">
+                <br>
+                <span>Buscar - Buscar Shiny</span>
+                <div id="botoes">
+                    <button onclick="buscarPokemon()" class="butaoBusca"><img
+                            src="https://image.flaticon.com/icons/png/512/188/188918.png" class="pokebola"></button>
+                    <button onclick="buscarPokemon(true)" class="butaoBusca"><img
+                            src="https://image.flaticon.com/icons/png/512/188/188918.png" class="pokebola"></button>
+                </div>
+
+            </div>
+            <div id="resultadoPokemon" class="bordaDouble">
+                <div id="imagemNome" class="bordaDouble">
+                    <img id="imagemPokemon">
+                    <span id="nomePokemon"></span>
+                </div>
+                <br>
+                <div><strong>Tipos:</strong><span id="tipos"></span></div>
+                <div id="caixaMoves"><strong>Moves:</strong><span id="moves"></span></div>
+
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

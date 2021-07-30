@@ -1,0 +1,154 @@
+body,
+html {
+
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+body {
+
+    background-image: url(https://wallpaperaccess.com/full/11914.jpg);
+    background-size: cover;
+}
+
+a {
+
+    text-decoration: none;
+    color: yellowgreen;
+}
+
+#container {
+
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#cabecalho {
+
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: transparent;
+}
+
+#pokedex {
+
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    gap: 1px;
+
+}
+
+#buscaPokemon {
+
+    color: yellowgreen;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 30px;
+    background-color: rgb(1, 1, 1, 0.8);
+}
+
+#resultadoPokemon {
+
+    color: yellowgreen;
+    padding: 20px 50px 50px 50px;
+    width: 200px;
+    height: 350px;
+    border-radius: 30px;
+    background-color: rgb(1, 1, 1, 0.8);
+}
+
+#imagemNome {
+
+    color: yellowgreen;
+    height: 140px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+#caixaMoves {
+
+    width: 200px;
+    height: 150px;
+    overflow: auto;
+}
+
+#caixaBusca {
+
+    background-color: transparent;
+    color: yellowgreen;
+    text-align: center;
+}
+
+#botoes {
+
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.butaoBusca {
+
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    background-color: transparent;
+}
+
+.pokebola {
+
+    width: 30px;
+    height: 30px;
+}
+
+.butaoBusca :hover {
+
+    width: 35px;
+    height: 35px;
+}
+
+.bordaDouble {
+
+    border-top: double aquamarine 5px;
+    border-right: double purple 5px;
+    border-bottom: double red 5px;
+    border-left: double yellow 5px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: purple;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: yellowgreen;
+}
